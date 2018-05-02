@@ -16,3 +16,10 @@ App Presentada en la Hackathon do Agro by AGCO - FENASOJA
 
 3. `$ ionic cordova build android`
 
+## Screenshots
+
+[View](https://github.com/je-brasil-argentina/agco-bridge/blob/master/dl/README.md)
+
+## Download
+
+[APK](https://github.com/je-brasil-argentina/agco-bridge/raw/master/dl/agco-bridge-v2.apk)
