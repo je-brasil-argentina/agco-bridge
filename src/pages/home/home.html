@@ -1,14 +1,71 @@
 <ion-header>
   <ion-navbar>
+    <button ion-button menuToggle right>
+      <ion-icon name='menu'></ion-icon>
+    </button>
     <ion-title>
-      Ionic Blank
+      AGCO Bridge
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content no-padding>
+  <ion-row class="row-gray">
+    <ion-col width-20 text-center margin>
+      <ion-icon name="time"></ion-icon>
+    </ion-col>
+    <ion-col width-80 text-left>
+      <h3 style="margin-bottom: 0;">Faltam</h3>
+      <h1 style="margin: 0;">
+        <b>36 DIAS</b>
+      </h1>
+      <h3>para a colheita</h3>
+    </ion-col>
+  </ion-row>
+  <ion-row padding>
+    <h2>Minhas Máquinas</h2>
+  </ion-row>
+  <ion-row>
+    <!-- <ion-col col-2>
+      <div class="gradient"></div>
+    </ion-col> -->
+    <ion-col>
+      <ion-list>
+
+        <ion-list>
+          <ion-item tappable (click)="verMaquina('VALTRA', 'A750E', 1)">
+            <ion-thumbnail item-end>
+              <img src="assets/imgs/machine1-small.png">
+            </ion-thumbnail>
+            <h2>VALTRA</h2>
+            <p>A750E</p>
+            <ion-chip item-start ><ion-icon name="build" color="secondary" style="transform: rotate(315deg);"></ion-icon></ion-chip>
+          </ion-item>
+
+          <ion-item tappable (click)="verMaquina('MASSEY FERGUSON', 'MF 6690', 3)">
+            <ion-thumbnail item-end>
+              <img src="assets/imgs/machine2-small.png">
+            </ion-thumbnail>
+            <h2>MASSEY FERGUSON</h2>
+            <p>MF 6690</p>
+            <ion-chip item-start ><ion-icon name="build" color="danger" style="transform: rotate(75deg);"></ion-icon></ion-chip>
+          </ion-item>
+
+          <ion-item tappable (click)="verMaquina('VALTRA', 'A750E', 2)">
+            <ion-thumbnail item-end>
+              <img src="assets/imgs/machine1-small.png">
+            </ion-thumbnail>
+            <h2>VALTRA</h2>
+            <p>A750E</p>
+            <ion-chip item-start ><ion-icon name="build" color="warning" style="transform: rotate(45deg); color: #fff"></ion-icon></ion-chip>
+          </ion-item>
+        </ion-list>        
+      </ion-list>
+    </ion-col>
+  </ion-row>
+  <ion-fab center bottom>
+    <button ion-fab color="primary" (click)="addMaquina()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
 </ion-content>

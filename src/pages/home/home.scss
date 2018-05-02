@@ -1,3 +1,31 @@
 page-home {
-
+    .row-gray {
+        background-color: color($colors, gray);
+        color: white;
+    }
+    .row-gray {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+    ion-icon {
+        font-size: 10rem;
+    }
+    ion-fab {
+        margin-bottom: 2rem;
+        ion-icon {
+            font-size: 5rem !important;
+        }
+    }
+    ion-list{
+        ion-item{
+            ion-icon{
+                font-size: 2.4rem;
+            }
+        }
+    }
+    .gradient {
+        height: 100%;
+        background: linear-gradient(green, yellow, red);
+    }
 }

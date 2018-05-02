@@ -1,0 +1,48 @@
+<ion-content padding id="login-screen">
+    <ion-row class="logo-row">
+        <!-- <ion-col></ion-col> -->
+        <ion-col>
+            <img class="img-responsive m-logo" src="assets/imgs/logo-login.png">
+        </ion-col>
+        <!-- <ion-col></ion-col> -->
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <div class="login-form">
+                <ion-list>
+                    <ion-item>
+                        <ion-label>CPF</ion-label>
+                        <ion-input type="text"></ion-input>
+                    </ion-item>
+                </ion-list>
+                <ion-list>
+                    <ion-item>
+                        <ion-label>Senha</ion-label>
+                        <ion-input type="password"></ion-input>
+                    </ion-item>
+                </ion-list>
+
+                <div padding>
+                    <button ion-button color="primary" (click)="goHome()" block round>LOGIN</button>
+                </div>
+            </div>
+        </ion-col>
+    </ion-row>
+
+    <ion-row text-center>
+        <ion-col>
+            <a (click)="goCadastro()">
+                <b>NOVO CADASTRO</b>
+            </a>
+        </ion-col>
+    </ion-row>
+
+    <ion-row padding-top>
+        <ion-col padding>
+            <h3 float-right>Powered By</h3>
+        </ion-col>
+        <ion-col>
+            <img class="img-responsive m-logo" src="assets/imgs/logo-agco-login.png">
+        </ion-col>
+    </ion-row>
+</ion-content>

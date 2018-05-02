@@ -34,11 +34,14 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
+  primary:    #993333,
+  primary-default:    #488aff,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  gray: #333333,
+  warning: #ffcc00
 );
 
 
@@ -69,6 +72,10 @@ $colors: (
 // then be future customized. This import comes last
 // so that the above variables are used and Ionic's
 // default are overridden.
+
+$toolbar-background: #000000;
+$background-color: color($colors, light);
+$menu-md-background: red;
 
 @import "ionic.theme.default";
 
